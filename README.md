@@ -6,7 +6,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ## Milestone 1:
 - Set up Github repo : local and remote, add remote origin, initialise Git on local repo
 
-##Milestone 2:
+## Milestone 2:
 - Create milestone2.py.
 - Import modules: random and string
 - Declare a list of words
