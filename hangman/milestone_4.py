@@ -1,6 +1,3 @@
-
-
-
 from milestone_2 import (
     word,
 )  # check this import is correct at the end - milestone_2.py should take care of the random word choice from word_list
