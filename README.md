@@ -19,7 +19,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 - ask_for_input prompts the user to input their guess (a single alphanumeric character), checks validity of inputs- then uses that validated input as a parameter for the check_guess() function
 - check_guess checks whether the guessed letter is in the secret word and outputs messages to let the user know whether their guess was correct
 
-# Milestone 4:
+## Milestone 4:
 - Defined a Hangman class with init method taking in a word_list parameter and num_lives (number of lives) with value 5 as a default
 - Defined the following attributes of hangman instances: word, word_guessed (starts with blanks and updates with correct letter guesses), num_letters (number of unique letters that have not been guessed yet), num_lives, word_list (list of words), list_of_guesses (list of unique guesses that have been tried)
 - Defined instance methods: ask_for_input, check_guess 
