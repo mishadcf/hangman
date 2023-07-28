@@ -11,7 +11,7 @@ class Hangman:
         ]  #  initialise blanks output to user of the same length as the secret word
         self.num_letters = len(
             set(self.word)
-        )  # initalises all asci_letters as a set, before user has made their choice. After, these will be removed/popped. What if this weren't a set?
+        )  
         self.list_of_guesses = []  # keeps track of all unique guesses
 
     def check_guess(self, guess):
