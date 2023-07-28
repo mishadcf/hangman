@@ -1,33 +1,25 @@
-from milestone_2 import (
-    word,
-)
-
-# from milestone_3 import check_guess, ask_for_input
-import string
-
-# check this import is correct at the end - milestone_2.py should take care of the random word choice from word_list, milestone_3.py already has a check_guess function (DRY)
+import random
 
 
-# Remember, this takes in word from milestone 2 - can adapt the below to arbitrary word list if needed
 class Hangman:
     def __init__(self, word_list, num_lives=5):
         self.word_list = word_list
         self.num_lives = num_lives
-        self.word = word  # initalise attributes inside of the init function? word here accesses word from import?
+        self.word = random.choice(word_list)
         self.word_guessed = [
-            "_" for i in range(len(word))
+            "" for i in range(len(self.word))
         ]  #  initialise blanks output to user of the same length as the secret word
-        self.num_letters = {
-            letter for letter in string.ascii_letters
-        }  # initalises all asci_letters as a set, before user has made their choice. After, these will be removed/popped. What if this weren't a set?
+        self.num_letters = len(
+            set(self.word)
+        )  # initalises all asci_letters as a set, before user has made their choice. After, these will be removed/popped. What if this weren't a set?
         self.list_of_guesses = []  # keeps track of all unique guesses
 
     def check_guess(self, guess):
         guess = guess.lower()
-        if guess in word:
+        if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
             for idx, letter in enumerate(
-                word
+                self.word
             ):  # takes care of the case where the same letter exists in the word in different locations
                 if guess == letter:
                     self.word_guessed[idx] = guess
