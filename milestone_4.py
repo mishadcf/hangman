@@ -7,11 +7,9 @@ class Hangman:
         self.num_lives = num_lives
         self.word = random.choice(word_list)
         self.word_guessed = [
-            "" for i in range(len(self.word))
+            "_" for i in range(len(self.word))
         ]  #  initialise blanks output to user of the same length as the secret word
-        self.num_letters = len(
-            set(self.word)
-        )  
+        self.num_letters = len(set(self.word))
         self.list_of_guesses = []  # keeps track of all unique guesses
 
     def check_guess(self, guess):
