@@ -29,6 +29,6 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 ## Milestone 5:
 - Used code from class definition in Milestone 4
-- Define a new function play_game, which creates a Hangman class instance as defined in milestone_4
-- Corrected the code to include a flag game_over, which ends the while True loop at the appropriate moments (when player wins or loses the game)
+- Define a new function play_game, which creates a Hangman class instance as defined in milestone_4 and manages execution of the game
+- Corrected the code to include a flag game_over, which ends the while True loop at the appropriate moments (when player wins or loses the game). It seems milestone_4 would not break the while True loop correctly
 
