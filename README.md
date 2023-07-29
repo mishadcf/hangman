@@ -27,5 +27,8 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 - check_guess is defined to check if the validated guess is in the secret word. If it is, then a message to that effect is printed and the letter takes the position(s) of the underscore ('_') in the word_guessed attribute of that instance.
 - if the guess is not in word, a message to that effect is printed and the player loses a life (self.num_lives reduces by 1)
 
-
+## Milestone 5:
+- Used code from class definition in Milestone 4
+- Define a new function play_game, which creates a Hangman class instance as defined in milestone_4
+- Corrected the code to include a flag game_over, which ends the while True loop at the appropriate moments (when player wins or loses the game)
 
