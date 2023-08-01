@@ -7,7 +7,7 @@ word_list = ["apple", "pear", "lychee", "mangosteen", "pineapple"]
 word = random.choice(word_list)
 
 
-# defining alphabet lists for validating user input
+# defining alphabet lists for validating user input. Didn't use these, as I discovered .isalpha() method
 lowercase_alphabets = list(string.ascii_lowercase)
 uppercase_alphabets = list(string.ascii_uppercase)
 alphabets = lowercase_alphabets + uppercase_alphabets
